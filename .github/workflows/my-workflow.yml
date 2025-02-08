@@ -1,0 +1,21 @@
+name: My GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: velmala.manoj@straive.com
+        run: echo "Hello, world!"
+
+      - name: Print current date
+        run: date
